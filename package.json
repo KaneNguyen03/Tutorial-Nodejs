@@ -2,9 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "Learn NodeJs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
     "test": " "
   },
   "repository": {
@@ -22,8 +23,18 @@
   },
   "homepage": "https://github.com/XuanKha1011/Tutorial_NodeJS#readme",
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.17",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "express-handlebars": "^7.0.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  }
 }
